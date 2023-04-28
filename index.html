@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+</head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Tótó Automóveis</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="assets/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-bars" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Localização</a></li>
+                    <li><a href="">Sobre Nós</a></li>
+                    <li><a href="">Estoque</a></li>
+                    <li><a href="">Contatos</a></li>
+                    <li><a href="">Outros</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+		<div class="text-box">
+		    <h1 class="tracking-in-contract">Ofertas Imperdíveis</h1>
+		    <a href="" class="hero-btn">Venha conferir nosso estoque! </a>
+		    
+		</div>
+
+	</section>
+
+<!------ LOCALIZAÇÃO ------>
+<section class="local">
+    <h1>Localização</h1>
+    <p>Av. João Paulo I, 1368 - Jardim Maracana, São Paulo - SP, 02842-280</p>
+
+
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3659.4061558569338!2d-46.6888933!3d-23.4818759!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef9c8ed93173f%3A0x885496cc278f7141!2zVG90w7MgQXV0b21vdsOpaXM!5e0!3m2!1spt-BR!2sbr!4v1677701748017!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>    
+    </div>
+</section>
+
+<!----------SOBRE NÓS--------->
+
+<section class="about">
+    <h1>Sobre Nós</h1>
+    <p>A Totó Automóveis atua no mercado de compra e venda de 
+veículos novos e usados na cidade de São Paulo, a mais de 
+20 anos. Vem construindo com muito trabalho a sua história 
+de sucesso desde então. Mais que comprar e vender automóveis, 
+a Totó Automóveis é parceira das principais financeiras do país
+ e financia com as melhores taxas de juros do mercado, visando 
+sempre o melhor negócio para seus clientes.</p>
+
+    <div class="banner">
+        <img src="https://bndvsitesst.blob.core.windows.net/sites-banners/default/argo-banner.png">
+        <div class="layer">
+            <h3>Exclusivas para você!</h3>
+        </div>
+    </div>
+   
+</section>
+
+<section class="cards">
+
+
+    <div class="row">
+        <div class="course-col">
+            <h2>Venda de veículos</h2>
+            <p>Quer comprar um veículo? Você está no lugar certo, entre no nosso estoque e saia de carro novo.</p>
+            <a href="" class="hero-btn">Estoque</a>
+        </div>
+        <div class="course-col">
+            <h2>Financiamento</h2>
+            <p>Quer financiar? Entre no link abaixo e preencha uma ficha para verificarmos as possibilidades pra você.</p>
+            <a href="" class="hero-btn">Saiba Mais </a>
+        </div>
+        <div class="course-col">
+            <h2>Dúvidas</h2>
+            <p>Teve problemas com o seu veículo? Entre em contato conosco e conte-nos o que aconteceu. Faremos o possível para lhe ajudar.</p>
+            <a href="" class="hero-btn">Dúvidas </a>
+        </div>
+        
+    </div>
+
+
+</section>
+
+<section id="section-budged">
+    <form action="#">
+        <h4>Financiamento</h4>
+        <label for="qtde">Valor de entrada</label>
+        <input type="number" id="qtde" min="1" value="1">
+        <label for="js">Condição do carro</label>
+        <div>
+            <input type="radio" id="carro-novo" name="carro">
+            <label for="layout-sim">Novo</label>
+            <input type="radio" id="carro-usadi" name="carro">
+            <label for="layout-nao">Usado</label>
+        </div>
+        <label for="layout">Possui CNH?</label>
+        <div>
+            <input type="radio" id="layout-sim" name="layout">
+            <label for="layout-sim">Sim</label>
+            <input type="radio" id="layout-nao" name="layout">
+            <label for="layout-nao">Não</label>
+        </div>
+        <label for="prazo">Quantidade de parcelas desejadas em anos</label>
+        <input type="range" id="prazo" min="1" max="5">
+
+
+    </form>
+</section>
+
+<script src="./assets/js/script.js"></script>
+
+
+<script>
+
+    var navLinks= document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+</body>
+</html> 
